@@ -90,11 +90,11 @@ pipelines:
           outputResources:
             - name: app_buildinfo
             
-      #- name: xrayScanStep
-      #  type: XrayScan
-      #  configuration:
-      #    inputResources:
-      #      - name: app_buildinfo   
+      - name: xrayScanStep
+        type: XrayScan
+        configuration:
+          inputResources:
+            - name: app_buildinfo   
 
   - name: app_prod_pipeline_su204
     steps:
