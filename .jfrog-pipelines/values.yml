@@ -1,0 +1,10 @@
+gitIntegration: myGithub
+gitRepositoryPath: jfrog/jfrog-pipelines-cd-sample  # replace jfrog with your username or org name
+artifactoryIntegration: myArtifactory
+distributionIntegration: myDistribution
+# artifactoryIntegration: demoArt
+imageName: app_docker_image
+# artifactoryUrl: pipe-master.jfrog-pipelines.com   # replace swampup with your server name
+artifactoryUrl: pipelines.jfrog.io # do not include https
+sourceRepository: quickstarts-docker-local  # create local repository in Artifactory
+prodRepository: quickstarts-target-local # create local repository in Artifactory
