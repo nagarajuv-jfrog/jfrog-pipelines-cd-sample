@@ -34,7 +34,7 @@ resources:
       #sourceDistribution: myDist
       sourceDistribution:  {{ .Values.distributionIntegration }}
       name: demo_rb
-      version: v1.0.0
+      version: v2.0.0
 
   - name: signed_bundle
     type: ReleaseBundle
@@ -42,7 +42,7 @@ resources:
       #sourceDistribution: myDist
       sourceDistribution:  {{ .Values.distributionIntegration }}
       name: demo_rb
-      version: v1.0.0
+      version: v2.0.0
 
   - name: distribution_rules
     type: DistributionRule
