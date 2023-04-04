@@ -128,7 +128,7 @@ pipelines:
  
  
  
-  - name: cd_demo_release_mgmt_su204
+  - name: cd_release_mgmt_su204
     steps:
       - name: bundle
         type: CreateReleaseBundle
