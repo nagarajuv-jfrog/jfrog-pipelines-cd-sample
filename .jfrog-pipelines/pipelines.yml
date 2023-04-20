@@ -50,7 +50,7 @@ resources:
       #sourceDistribution: myDist
       sourceDistribution:  {{ .Values.distributionIntegration }}
       #serviceName: "*"
-      siteName: "https://pipelinesedge.jfrog.io/"
+      siteName: "pipelinesedge.jfrog.io"
       cityName: "singapore"
       countryCodes:
         - "65"     
