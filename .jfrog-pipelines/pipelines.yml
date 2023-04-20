@@ -50,10 +50,10 @@ resources:
       #sourceDistribution: myDist
       sourceDistribution:  {{ .Values.distributionIntegration }}
       #serviceName: "*"
-      siteName: "pipelinesedge.jfrog.io"
-      cityName: "singapore"
+      siteName: "pipelinesedge"
+      cityName: "*"
       countryCodes:
-        - "65"     
+        - "*"     
 
 pipelines:
   - name: app_dev_pipeline_su204
@@ -162,8 +162,8 @@ pipelines:
       - name: distribute
         type: DistributeReleaseBundle
         configuration:
-          # dryRun: false
-          dryRun: true
+          dryRun: false
+          # dryRun: true
           inputResources:
             - name: signed_bundle
             - name: distribution_rules 
