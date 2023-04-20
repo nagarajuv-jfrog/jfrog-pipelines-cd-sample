@@ -49,11 +49,11 @@ resources:
     configuration:
       #sourceDistribution: myDist
       sourceDistribution:  {{ .Values.distributionIntegration }}
-      serviceName: "*"
-      siteName: "*"
-      cityName: "*"
+      #serviceName: "*"
+      siteName: "https://pipelinesedge.jfrog.io/"
+      cityName: "singapore"
       countryCodes:
-        - "*"     
+        - "65"     
 
 pipelines:
   - name: app_dev_pipeline_su204
