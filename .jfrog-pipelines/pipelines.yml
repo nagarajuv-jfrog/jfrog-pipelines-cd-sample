@@ -60,6 +60,9 @@ pipelines:
     steps:
       - name: app_build
         type: DockerBuild
+        execution:
+          onStart:
+            - set_run_name "1.0.1"        
         configuration:
           affinityGroup: docker_group
           dockerFileLocation: .
