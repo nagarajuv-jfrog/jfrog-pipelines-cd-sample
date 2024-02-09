@@ -1,5 +1,5 @@
-gitIntegration: myGithub
-gitRepositoryPath: jfrog/jfrog-pipelines-cd-sample  # replace jfrog with your username or org name
+gitIntegration: GitHubIntegration
+gitRepositoryPath: nagarajuv-jfrog/jfrog-pipelines-cd-sample  # replace jfrog with your username or org name
 artifactoryIntegration: myArtifactory
 distributionIntegration: myDistribution
 # artifactoryIntegration: demoArt
